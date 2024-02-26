@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company HR Portal</title>
+    <link rel="icon" href="icon.png">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #efe2e2;
+        }
+        header , footer{
+            background-color: #5c5858;
+            color: aliceblue;
+            text-align: center;
+            padding: 2px;
+        }
+
+        .navitem{
+            display: inline;
+            padding: 12px;
+        }
+        .navitem a{
+            text-decoration: none;
+            color: white;
+        }
+        .registerfrom{
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .submitbutton{
+            text-align: center;
+        }
+        .employeetable{
+            text-align: center;
+        }
+        table {
+            margin-right: auto;
+            margin-left: auto;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th , td{
+            border: 3px solid #5c5855;
+            padding: 8px;
+        }
+        .contactus {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome To Company HR Portal</h1>
+        <nav>
+        <ul>
+            <li class="navitem"><a href="#Employee-Registration">Employee Registration</a></li>
+            <li class="navitem"><a href="#Employee-Directory">Employee Directory</a></li>
+            <li class="navitem"><a href="#Contact Us">Contact Us</a></li>
+        </ul>
+        </nav>
+    </header>
+    <img src="working.jpg" width="2400"; height="390">
+    <section id="Employee-Registration" class="registerfrom">
+        <h2>Employee Registration</h2>
+        <p>Fill the below form to register as <em>employee</em></p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter Full Name" id="name" required><br><br>
+            <label for="email">Email id</label>
+            <input type="email" placeholder="Enter Email" id="email id" required><br><br>
+            <label for="dob">Enter Your DOB:</label>
+            <input type="date" id="dob" required><br><br>
+            <label for="role">Select role:</label>
+            <select name="" id="">
+                <option>Software Engineer</option>
+                <option>Product Engineer</option>
+                <option>Designer</option>
+                <option>Hr Representative</option>
+            </select><br><br>
+            <label for="joining date">Select Joining Date:</label>
+            <input type="date" id="Joining date"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Enetr Password" id="password" required><br><br>
+            <input type="Submit" class="submitbutton"><br>
+        </form>
+    </section>
+    <section id="Employee-Directory" class="employeetable">
+        <h2>Employee-Directory</h2>
+        <p>List of all registered employees.</p>
+        <table>
+            <tr>
+                <th>Employee Id</th>
+                <th>Employee Name</th>
+                <th>Employee Role</th>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Md Jasim Ansari</td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Siddhant Aryan</td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Piyush Ranjan</td>
+                <td>Product Engineer</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>Manish Kumar</td>
+                <td>Designer</td>
+            </tr>
+            <tr>
+                <td>105</td>
+                <td>Khushi Kumari</td>
+                <td>HR Representative</td>
+            </tr>
+        </table>
+    </section>
+    <section id="Contact Us" class="contactus">
+        <h2>Contact Us</h2>
+        <p>You can Contact us at xyz@official.com or visit us between 9AM - 6PM.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3431.1315008997935!2d76.6596830750357!3d30.686575987862923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fef5f2758e69f%3A0xd260ad255a8f0454!2sCgc%20Landran%20Volleyball%20Court!5e0!3m2!1sen!2sin!4v1708971021219!5m2!1sen!2sin" width="350" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <footer>
+        <p>&copy; 2023 Company Name</p>
+    </footer>
+</body>
+</html>
